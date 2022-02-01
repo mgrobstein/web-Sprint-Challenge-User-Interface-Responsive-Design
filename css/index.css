@@ -78,14 +78,20 @@ section, footer{
 html{
     font-size: 62.5%;
 }
+header{
+    max-width:90%;
+}
 nav{
     display:flex;
     justify-content:space-between;
+    width:100%;
+    box-sizing: none;
 }
 
 .bloomlogo{
     width:15rem;
     height:auto;
+    padding-top: 20px;
 }
 
 nav a{
@@ -100,6 +106,9 @@ nav a{
 }
 .buttons{
     display:flex;
+    justify-content:space-around;
+    width:80%;
+    padding-right: 2%;
 }
 .imgone{
     display:flex;

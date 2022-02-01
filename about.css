@@ -47,18 +47,16 @@ table {
 	border-spacing: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 html{
     font-size:62.5%;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height:1.5;
     font-size:1.6rem;
     padding: 0, 10%, 0, 10%;
+    margin-right: 10%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -78,14 +76,20 @@ section, footer{
 html{
     font-size: 62.5%;
 }
+header{
+    max-width:90%;
+}
 nav{
     display:flex;
     justify-content:space-between;
+    width:100%;
+    box-sizing: none;
 }
 
 .bloomlogo{
     width:15rem;
     height:auto;
+    padding-top: 20px;
 }
 
 nav a{
@@ -100,32 +104,12 @@ nav a{
 }
 .buttons{
     display:flex;
-}
-.imgone{
-    display:flex;
-    justify-content:center;
-}
-.imageone{
-    width: 100%;
-    height:auto;
+    justify-content:space-around;
+    width:90%;
+    padding-right: 3%;
+    padding-left: 1%;
 }
 
-
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 4%;
-    border-bottom: 2px solid #ff4b00;
-    text-align: justify;
-    align-items: center;
-}
-
-.top-content .text-container {
-    width: 50%;
-    padding: 0 1%;
-    padding-bottom: 4%;  
-}
 
 h2{
     display:flex;
@@ -138,26 +122,25 @@ h2{
 }
 
 /*Middle Section Styles*/
-.about{
-    margin-bottom: 4%;
-    border-bottom: 2px solid #ff4b00;
 
-}
 .containeraboutpage{
     width:80%;
     max-width:80%;
+}
+
+.about{
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
 }
 
 .strategy .howwe .places .collaboration{
     display:flex;
     border-bottom: 2px solid #ff4b00;
     padding: 10%;
-
 }
 .strategy{
     border-bottom: 2px solid #ff4b00;
     padding: 10%;
-
 }
 .howwe{
     border-bottom: 2px solid #ff4b00;
@@ -176,18 +159,20 @@ h2{
     justify-content:space-between;
     align-content: space-between;
     margin: 2%;
-    width:60%
 }
 
 .middleparttwo{
     display:flex;
     justify-content:space-between;
     margin: 2%;
-    width:60%
 }
 
 .middle-content h2 {
     margin-bottom: 0;
+}
+
+.middleimages{
+    width:150%;
 }
 
 
@@ -201,10 +186,9 @@ h2{
     width:25%;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+.footer nav{
+    box-sizing: none;
 }
-
 .lastwords{
     padding-bottom: 50px;
 }
@@ -230,13 +214,14 @@ footer nav a{
     }
     .bloomlogo{
         display:flex;
+        width: 80%;
         align-items: center;
         justify-content: center;
     }
     .buttons{
         display:flex;
         align-items:center;
-        justify-content: center;
+        justify-content:space-around;
     }
     nav a{
         display:flex;
