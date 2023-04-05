@@ -34,5 +34,5 @@ There are 10 boxes on the home page that need background colors.  Using this lis
  
 ### Responsive Design 
 
-Ensured your website is responsive at 500px such that your styles match the mobile design file for the home and about pages.
+Ensured the website is responsive at 500px such that your styles match the mobile design file for the home and about pages.
  
