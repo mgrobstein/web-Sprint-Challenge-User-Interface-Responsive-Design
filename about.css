@@ -47,18 +47,16 @@ table {
 	border-spacing: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 html{
     font-size:62.5%;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height:1.5;
     font-size:1.6rem;
     padding: 0, 10%, 0, 10%;
+    margin-right: 10%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -101,126 +99,80 @@ nav a{
     padding: 20px;
     border-radius: 20px;
     text-decoration: none;
-    margin-bottom: 1px;
+    margin-bottom: 20px;
     color: black;
 }
 .buttons{
     display:flex;
     justify-content:space-around;
-    width:80%;
-    padding-right: 2%;
-}
-.imgone{
-    display:flex;
-    justify-content:center;
-}
-.imageone{
-    width: 100%;
-    height:auto;
+    width:90%;
+    padding-right: 3%;
+    padding-left: 1%;
 }
 
-
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 4%;
-    border-bottom: 2px solid #ff4b00;
-    text-align: justify;
-    align-items: center;
-}
-
-.top-content .text-container {
-    width: 50%;
-    padding: 0 1%;
-    padding-bottom: 4%;  
-}
 
 h2{
     display:flex;
-    justify-content: center;
+    justify-content: left;
+    align-content:left;
     padding-bottom: 1%;  
+}
+.jumboabout{
+    width: 100%;
 }
 
 /*Middle Section Styles*/
-.middle-content {
+
+.containeraboutpage{
+    width:80%;
+    max-width:80%;
+}
+
+.about{
     margin-bottom: 4%;
-    /* display:flex;
-    justify-content:none; */
+    border-bottom: 2px solid #ff4b00;
 }
-.middleparagraph{
+
+.strategy .howwe .places .collaboration{
     display:flex;
-    justify-content:none;
-    font-size: 2.5rem;
+    border-bottom: 2px solid #ff4b00;
+    padding: 10%;
 }
+.strategy{
+    border-bottom: 2px solid #ff4b00;
+    padding: 10%;
+}
+.howwe{
+    border-bottom: 2px solid #ff4b00;
+    padding: 10%;
+}
+.places{
+    border-bottom: 2px solid #ff4b00;
+    padding: 10%;
+}
+.collaboration{
+    border-bottom: 2px solid #ff4b00;
+    padding: 10%;
+}
+.middlepartone{
+    display:flex;
+    justify-content:space-between;
+    align-content: space-between;
+    margin: 2%;
+}
+
+.middleparttwo{
+    display:flex;
+    justify-content:space-between;
+    margin: 2%;
+}
+
 .middle-content h2 {
     margin-bottom: 0;
 }
 
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.middle-content .boxes .box {
-    background: black;
-    margin: 4%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5%;
-    width: 180px;
-    height: 180px;
-    margin:3%;
-    color:white;
-}
-
-.box1{
-    background-color: teal;
-}
-
-.box2{
-    background-color: gold;
-}
-
-.box3{
-    background-color: cadetblue;
-}
-
-.box4{
-    background-color: coral;
-}
-
-.box5{
-    background-color: crimson;
-}
-
-.box6{
-    background-color: forestgreen;
-}
-
-.box7{
-    background-color: darkorchid;
-}
-
-.box8{
-    background-color: hotpink;
-}
-
-.box9{
-    background-color: indigo;
-}
-
-.box10{
-    background-color: dodgerblue;
+.middleimages{
+    width:150%;
 }
 
 
@@ -234,13 +186,14 @@ h2{
     width:25%;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+.footer nav{
+    box-sizing: none;
 }
-
+.lastwords{
+    padding-bottom: 50px;
+}
 /*Footer Styles*/
 footer {
-    width: 120%;
     background-color: #ff4b00;
 }
 
@@ -259,21 +212,16 @@ footer nav a{
         justify-content:center;
         align-items: center;
     }
-    .middleparagraph{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        font-size: 2.5rem;
-    }
     .bloomlogo{
         display:flex;
+        width: 80%;
         align-items: center;
         justify-content: center;
     }
     .buttons{
         display:flex;
-        justify-content: center;
+        align-items:center;
+        justify-content:space-around;
     }
     nav a{
         display:flex;
@@ -285,34 +233,27 @@ footer nav a{
         display:flex;
         flex-direction:column;
     }
-    .middle-content .boxes{
-        display: flex;
-        justify-content: center;
-    }
-    .boxes{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
-        padding: 2%;
-        width: 120px;
-        height: 120px;
-        margin:3%;
-        color:white;
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .bottom-content{
         display:flex;
         flex-direction:column;
         align-items: center;
     }
-    .text-container{
-        min-width: 380px;
+
+    .middlepartone{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-content: space-between;
+        margin: 10px;
+        max-width:95%
+    }
+    
+    .middleparttwo{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        margin: 10px;
+        max-width:95%
     }
 }
